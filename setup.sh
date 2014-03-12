@@ -63,12 +63,14 @@ ln -sb dotfiles/.bashrc_custom .
 ln -sb dotfiles/.tmux.conf .
 ln -sf dotfiles/.emacs.d .
 
+sudo chown -R vagrant .emacs.d
+sudo chown -R vagrant dotfiles
+sudo chown -R vagrant .tmuxinator
+
 sudo mkdir .tmuxinator
 cp -r dotfiles/.tmuxinator/* .tmuxinator
 
-sudo chown -R vagrant .emacs
-sudo chown -R vagrant dotfiles
-sudo chown -R vagrant .tmuxinator
+
 
 
 source .bash_profile
