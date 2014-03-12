@@ -62,5 +62,7 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sb dotfiles/.tmux.conf .
 ln -sf dotfiles/.emacs.d .
-ln -sf dotfiles/.tmuxinator .
+
+sudo mkdir .tmuxinator
+cp -r dotfiles/.tmuxinator/* .tmuxinator
 
