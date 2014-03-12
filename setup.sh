@@ -68,7 +68,7 @@ sudo chown -R vagrant dotfiles
 sudo chown -R vagrant .tmuxinator
 
 sudo mkdir .tmuxinator
-cp -r dotfiles/.tmuxinator/* .tmuxinator
+sudo cp -r dotfiles/.tmuxinator/* .tmuxinator
 
 
 
