@@ -13,14 +13,16 @@ source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
 nvm use v0.10.12
 
+# Update Ruby 1.9 in order to play nice with tmuxinator
+sudo apt-get install -y ruby1-9 rubygems1-9
+sudo ln -sf /usr/bin/ruby1-9 /usr/bin/ruby
+
 # Install tmux 1.8 in order to later use tmuxinator
 sudo apt-get install -y software-properties-common python-software-properties
 sudo add-apt-repository -y ppa:pi-rho/dev
 sudo apt-get -qq update
 sudo apt-get install -y tmux=1.8-5ubuntu1~ppa1~p
 
-# Install rubygems
-sudo apt-get install -y rubygems
 
 # Update rubygems to install tmuxinator
 sudo gem install rubygems-update
