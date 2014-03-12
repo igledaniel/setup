@@ -14,6 +14,7 @@ nvm install v0.10.12
 nvm use v0.10.12
 
 # Install tmux 1.8 in order to later use tmuxinator
+sudo apt-get install -y software-properties-common python-software-properties
 sudo add-apt-repository ppa:pi-rho/dev
 sudo apt-get update
 sudo apt-get install tmux=1.8-5ubuntu1~ppa1~p
@@ -37,7 +38,7 @@ npm install -g jshint
 sudo apt-get install -y rlwrap
 
 # Install emacs24
-# https://launchpad.net/~cassou/+archive/emacs
+# https://launchpad.net/~cassou/+archive/emaca
 sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
 sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
