@@ -66,3 +66,5 @@ ln -sf dotfiles/.emacs.d .
 sudo mkdir .tmuxinator
 cp -r dotfiles/.tmuxinator/* .tmuxinator
 
+source .bash_profile
+
