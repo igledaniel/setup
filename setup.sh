@@ -13,9 +13,11 @@ source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
 nvm use v0.10.12
 
-# Update Ruby 1.9 in order to play nice with tmuxinator
-sudo apt-get install -y ruby1-9 rubygems1-9
-sudo ln -sf /usr/bin/ruby1-9 /usr/bin/ruby
+# Update rvm 
+sudo apt-get install -y build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev
+curl -L https://get.rvm.io | bash -s stable --ruby --autolibs=enable --auto-dotfiles
+source /home/vagrant/.rvm/scripts/rvm
+
 
 # Install tmux 1.8 in order to later use tmuxinator
 sudo apt-get install -y software-properties-common python-software-properties
@@ -25,8 +27,8 @@ sudo apt-get install -y tmux=1.8-5ubuntu1~ppa1~p
 
 
 # Update rubygems to install tmuxinator
-sudo gem install rubygems-update
-sudo update_rubygems
+#sudo gem install rubygems-update
+#sudo update_rubygems
 
 #Install txuminator
 sudo gem install tmuxinator
