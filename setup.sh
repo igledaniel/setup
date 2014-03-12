@@ -27,8 +27,8 @@ sudo apt-get install -y tmux=1.8-5ubuntu1~ppa1~p
 
 
 # Update rubygems to install tmuxinator
-#sudo gem install rubygems-update
-#sudo update_rubygems
+sudo gem install rubygems-update
+sudo update_rubygems
 
 #Install txuminator
 sudo gem install tmuxinator
