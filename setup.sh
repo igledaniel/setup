@@ -15,7 +15,7 @@ nvm use v0.10.12
 
 # Install tmux 1.8 in order to later use tmuxinator
 sudo apt-get install -y software-properties-common python-software-properties
-sudo add-apt-repository ppa:pi-rho/dev
+sudo add-apt-repository -y ppa:pi-rho/dev
 sudo apt-get update
 sudo apt-get install tmux=1.8-5ubuntu1~ppa1~p
 
