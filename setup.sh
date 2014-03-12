@@ -79,5 +79,5 @@ sudo chown -R vagrant .tmuxinator
 
 
 
-source .bash_profile
+source ~/.bash_profile
 
