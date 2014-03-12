@@ -65,9 +65,10 @@ ln -sf dotfiles/.emacs.d .
 
 sudo chown -R vagrant .emacs.d
 sudo chown -R vagrant dotfiles
-sudo chown -R vagrant .tmuxinator
 
 sudo mkdir .tmuxinator
+
+sudo chown -R vagrant .tmuxinator
 sudo cp -r dotfiles/.tmuxinator/* .tmuxinator
 
 
